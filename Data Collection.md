@@ -25,3 +25,23 @@ At home:
 14. keys placed on table
 15. dishwasher 
 
+
+Tue 20 
+
+On the way to university:
+16. train doors opening and closing 
+17. people talking 
+18. footsteps
+
+In lecture:
+19. people talking 
+20. bags opening/zipper
+21. videos playing randomly
+22. phone ringing
+
+At home:
+23. doorbell
+24. cats meowing 
+25. TV playing
+26. microwave beeping 
+
