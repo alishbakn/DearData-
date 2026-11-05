@@ -55,6 +55,10 @@ void draw ()
   rect(565, 375, 25, 25, 10, 10, 10, 10);
   fill(0);
   text("Households", 595, 392);
+  
+  //adding a box where inside it will represent the data 
+  fill(255);
+  rect(40, 40, 485, 500);
 }
 
 //method to represent the categories
