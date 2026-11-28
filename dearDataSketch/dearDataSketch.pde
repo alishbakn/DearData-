@@ -1,64 +1,109 @@
 void setup()
 {
   size(800, 600);
-  //background(#EAC9D5);
-  background(#D3C2C8);
+  background(225);
 }
 
 void draw ()
 {
-  fill(255);
+  //fills colour of line - represents the category
+  //nature - green
+  stroke(#97BF7D);
+  strokeWeight(2);
 
-  //box containing info of options
-  rect(550, 40, 225, 500);
-  fill(0);
-  textSize(25);
-  text("Key", 565, 75);
+  //lines for nature
+  line(42, 57, 120, 57);
+  line(42, 75, 120, 75);
+  line(42, 93, 120, 93);
 
-  //category options
-  fill(0);
-  textSize(15);
-  text("Categories:", 565, 115);
 
-  //turn into method
-  fill(#F76692);
-  rect(565, 135, 25, 25, 10, 10, 10, 10); //+40 to y
+  //first symbols for nature  - using circles for now
   fill(0);
-  text("Human Activity", 595, 152); //+40 to y
+  stroke(0);
+  circle(55, 65, 7);   //circle(x, y, r);
+  circle(80, 75, 7);
+  circle(80, 75, 7);
+  circle(105, 65, 7);
 
-  fill(#4E51D1);
-  rect(565, 175, 25, 25, 10, 10, 10, 10);
-  fill(0);
-  text("Technology", 595, 192);
+  //lines for human activity (pink)
+  stroke(#F04682);
+  strokeWeight(2);
 
-  fill(#F5AD39);
-  rect(565, 215, 25, 25, 10, 10, 10, 10);
-  fill(0);
-  text("Transport", 595, 232);
+  line(120, 57, 220, 57);
+  line(120, 75, 220, 75);
+  line(120, 93, 220, 93);
 
-  fill(#9DD19A);
-  rect(565, 255, 25, 25, 10, 10, 10, 10);
+  //circle for human activity (pink)
   fill(0);
-  text("Nature", 595, 272);
+  stroke(0);
+  circle(135, 75, 7);   //circle(x, y, r);
+  circle(160, 85, 7);
+  circle(185, 75, 7);
+  circle(210, 57, 7);
 
-  fill(#75C6F7);
-  rect(565, 295, 25, 25, 10, 10, 10, 10);
-  fill(0);
-  text("Animals", 595, 312);
+  //line for objects (yellow)
+  stroke(#F2C83B);
+  strokeWeight(2);
 
-  fill(#FFD95D);
-  rect(565, 335, 25, 25, 10, 10, 10, 10);
-  fill(0);
-  text("Objects", 595, 352);
+  line(220, 57, 300, 57);
+  line(220, 75, 300, 75);
+  line(220, 93, 300, 93);
 
-  fill(#B861F0);
-  rect(565, 375, 25, 25, 10, 10, 10, 10);
+  //circle for objects (yellow)
   fill(0);
-  text("Households", 595, 392);
-  
-  //adding a box where inside it will represent the data 
-  fill(255);
-  rect(40, 40, 485, 500);
+  stroke(0);
+  circle(235, 57, 7);
+  circle(260, 65, 7);
+  circle(285, 85, 7);
+
+  //line for household (purple)
+  stroke(#C24EE3);
+  strokeWeight(2);
+
+  line(300, 57, 360, 57);
+  line(300, 75, 360, 75);
+  line(300, 93, 360, 93);
+
+  //circle for household (purple)
+  fill(0);
+  stroke(0);
+  circle(315, 93, 7);
+  circle(340, 75, 7);
+
+  //line for transport (orange)
+  stroke(#F78132);
+  strokeWeight(2);
+
+  line(360, 57, 390, 57);
+  line(360, 75, 390, 75);
+  line(360, 93, 390, 93);
+
+  //circle for transport (orange)
+  fill(0);
+  stroke(0);
+  circle(375, 93, 7);
+
+  //line for technology (dark blue)
+  stroke(#394BBC);
+  strokeWeight(2);
+
+  line(390, 57, 450, 57);
+  line(390, 75, 450, 75);
+  line(390, 93, 450, 93);
+
+  //circle for technology (dark blue)
+  fill(0);
+  stroke(0);
+  circle(405, 65, 7);
+  circle(430, 57, 7);
+
+  //line for animals (light blue)
+  stroke(#62BEFA);
+  strokeWeight(2);
+
+  line(450, 57, 490, 57);
+  line(450, 75, 490, 75);
+  line(450, 93, 490, 93);
 }
 
 //method to represent the categories
