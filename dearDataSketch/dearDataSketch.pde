@@ -2,21 +2,38 @@ void setup()
 {
   size(800, 600);
   background(225);
+  
+  //initialising objects of categoryLine
+  nature = new categoryLine(42, 120, #97BF7D);
+  humanActivity = new categoryLine(120, 220, #F04682);
+  objects = new categoryLine(220, 300, #F2C83B);
+  household = new categoryLine(300, 360, #C24EE3);
+  transport = new categoryLine(360, 390, #F78132);
+  technology = new categoryLine(390, 450, #394BBC);
+  animals = new categoryLine(450, 490, #62BEFA);
 }
+
+//declaring my objects for categoryLine
+categoryLine nature;
+categoryLine humanActivity;
+categoryLine objects;
+categoryLine household;
+categoryLine transport;
+categoryLine technology;
+categoryLine animals;
 
 void draw ()
 {
-  //fills colour of line - represents the category
-  //nature - green
-  stroke(#97BF7D);
-  strokeWeight(2);
-
-  //lines for nature
-  line(42, 57, 120, 57);
-  line(42, 75, 120, 75);
-  line(42, 93, 120, 93);
-
-
+  
+  //draws the lines for each category
+  nature.display();
+  humanActivity.display();
+  objects.display();
+  household.display();
+  transport.display();
+  technology.display();
+  animals.display();
+  
   //first symbols for nature  - using circles for now
   fill(0);
   stroke(0);
@@ -25,13 +42,6 @@ void draw ()
   circle(80, 75, 7);
   circle(105, 65, 7);
 
-  //lines for human activity (pink)
-  stroke(#F04682);
-  strokeWeight(2);
-
-  line(120, 57, 220, 57);
-  line(120, 75, 220, 75);
-  line(120, 93, 220, 93);
 
   //circle for human activity (pink)
   fill(0);
@@ -41,13 +51,6 @@ void draw ()
   circle(185, 75, 7);
   circle(210, 57, 7);
 
-  //line for objects (yellow)
-  stroke(#F2C83B);
-  strokeWeight(2);
-
-  line(220, 57, 300, 57);
-  line(220, 75, 300, 75);
-  line(220, 93, 300, 93);
 
   //circle for objects (yellow)
   fill(0);
@@ -56,13 +59,6 @@ void draw ()
   circle(260, 65, 7);
   circle(285, 85, 7);
 
-  //line for household (purple)
-  stroke(#C24EE3);
-  strokeWeight(2);
-
-  line(300, 57, 360, 57);
-  line(300, 75, 360, 75);
-  line(300, 93, 360, 93);
 
   //circle for household (purple)
   fill(0);
@@ -70,26 +66,12 @@ void draw ()
   circle(315, 93, 7);
   circle(340, 75, 7);
 
-  //line for transport (orange)
-  stroke(#F78132);
-  strokeWeight(2);
-
-  line(360, 57, 390, 57);
-  line(360, 75, 390, 75);
-  line(360, 93, 390, 93);
 
   //circle for transport (orange)
   fill(0);
   stroke(0);
   circle(375, 93, 7);
 
-  //line for technology (dark blue)
-  stroke(#394BBC);
-  strokeWeight(2);
-
-  line(390, 57, 450, 57);
-  line(390, 75, 450, 75);
-  line(390, 93, 450, 93);
 
   //circle for technology (dark blue)
   fill(0);
@@ -97,16 +79,4 @@ void draw ()
   circle(405, 65, 7);
   circle(430, 57, 7);
 
-  //line for animals (light blue)
-  stroke(#62BEFA);
-  strokeWeight(2);
-
-  line(450, 57, 490, 57);
-  line(450, 75, 490, 75);
-  line(450, 93, 490, 93);
-}
-
-//method to represent the categories
-void categoryOptions()
-{
 }
